@@ -1,0 +1,33 @@
+# === Node modules ===
+/Frontend/node_modules/
+/Backend/node_modules/
+
+# === Environment files ===
+/Backend/.env
+/Frontend/.env
+
+# === Build output ===
+/Frontend/build/
+/Frontend/dist/
+/Backend/build/
+/Backend/dist/
+
+# === Logs ===
+*.log
+npm-debug.log*
+
+# === System files ===
+.DS_Store
+Thumbs.db
+
+# === Editor folders ===
+.vscode/
+.idea/
+
+# === Optional lockfiles (choose one only if needed) ===
+# /Frontend/package-lock.json
+# /Frontend/yarn.lock
+# /Backend/package-lock.json
+# /Backend/package.json
+# /Backend/yarn.lock
+# /Frontend/com.json
