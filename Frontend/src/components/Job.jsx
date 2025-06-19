@@ -8,6 +8,7 @@ import { useNavigate } from "react-router-dom";
 const Job = ({ job }) => {
   const navigate = useNavigate();
   // const jobId = "lsekdhjgdsnfvsdkjf";
+  console.log("Company object:", job.company.logo);
 
   const daysAgoFunction = (mongodbTime) => {
     const createdAt = new Date(mongodbTime);
@@ -20,7 +21,6 @@ const Job = ({ job }) => {
     const options = { year: "numeric", month: "short", day: "numeric" };
     return new Date(dateString).toLocaleDateString(undefined, options);
   };
-  console.log("Company object:", job.company);
   return (
     <div className="p-5 rounded-md shadow-xl bg-white border border-gray-100">
       <div className="flex items-center justify-between">
