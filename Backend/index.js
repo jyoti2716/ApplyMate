@@ -24,12 +24,12 @@ console.log(__dirname);
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 app.use(cookieParser());
-// const corsOptions = {
-//     origin: 'http://localhost:5173',
-//     credentials:true
-// }
+const corsOptions = {
+    origin: 'https://applymate-0c2x.onrender.com',
+    credentials:true
+}
 
-app.use(cors({ credentials: true, origin: true }));
+// app.use(cors({ credentials: true, origin: true }));
 
 const PORT = process.env.PORT || 3000;
 
