@@ -1,33 +1,42 @@
-# === Node modules ===
-/Frontend/node_modules/
-/Backend/node_modules/
+# === Node.js ===
+**/node_modules/
+**/dist/
+**/.env
+**/package-lock.json
 
-# === Environment files ===
-/Backend/.env
-/Frontend/.env
+# === Frontend (Vite/React) ===
+Frontend/.vite/
+Frontend/.next/
+Frontend/.cache/
+Frontend/build/
 
-# === Build output ===
-/Frontend/build/
-/Frontend/dist/
-/Backend/build/
-/Backend/dist/
+
+.env
+
+# === Backend ===
+Backend/logs/
+Backend/tmp/
+Backend/uploads/
 
 # === Logs ===
 *.log
 npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-# === System files ===
+# === OS-specific ===
 .DS_Store
 Thumbs.db
 
-# === Editor folders ===
+# === IDEs ===
 .vscode/
 .idea/
+*.sw?
 
-# === Optional lockfiles (choose one only if needed) ===
-# /Frontend/package-lock.json
-# /Frontend/yarn.lock
-# /Backend/package-lock.json
-# /Backend/package.json
-# /Backend/yarn.lock
-# /Frontend/com.json
+# === Other ===
+.env.local
+.env.*.local
+*.bak
+*.tmp
+*.swp
+
